@@ -1,0 +1,45 @@
+
+$(document).ready(function(){
+$("#item-btn").click(function(){
+    console.log("click")
+})
+$("#tableDatabtn").click(function()
+{
+    $(this).html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
+    .css("background-color","red")
+    $("#detail-page").css("display","flex")
+    $("#detail-page").fadeIn(1000);
+})
+$("#blurdata").click(function(){
+    $("#detail-page").fadeOut(500);
+    $("#tableDatabtn").html('click').css("background-color","")
+})
+$("#close").click(function(){
+    $("#detail-page").fadeOut(500);
+    $("#tableDatabtn").html('click').css("background-color","")
+})
+$("#nav-item-1").click(function(){
+    $(this).addClass("nav-item-click")
+    $("#nav-item-2").removeClass("nav-item-click")
+    $("#nav-item-3").removeClass("nav-item-click")
+    $(".detail-section-item").css("display","block")
+    $(".new-entry").css("display","none")
+    $("#progress").css("display","none")
+})
+$("#nav-item-2").click(function(){
+    $(this).addClass("nav-item-click")
+    $("#nav-item-1").removeClass("nav-item-click")
+    $("#nav-item-3").removeClass("nav-item-click")
+    $(".detail-section-item").css("display","none")
+    $(".new-entry").css("display","block")
+    $("#progress").css("display","none")
+})
+$("#nav-item-3").click(function(){
+    $(this).addClass("nav-item-click")
+    $("#nav-item-1").removeClass("nav-item-click")
+    $("#nav-item-2").removeClass("nav-item-click")
+    $(".detail-section-item").css("display","none")
+    $(".new-entry").css("display","none")
+    $("#progress").css("display","block")
+})
+})
