@@ -1,33 +1,33 @@
 const tableData = document.getElementById("usertable");
 
-let usersData =[
-    {users:'jonas', data:'1234', deviceId:'34576@8589', imeiNo:'https://news.google.com',id:1},
-    {users:'jokutyr', data:'2453', deviceId:'57666@8584', imeiNo:'https://www.youtube.com',id:2},
-    {users:'gtrewse', data:'5674', deviceId:'85656@8566', imeiNo:87675634235775,id:3},
-    {users:'mosaid', data:'7454', deviceId:'34576@8586', imeiNo:76765567567565,id:4},
-    {users:'jonas', data:'1234', deviceId:'34576@8589', imeiNo:84536974389743,id:5},
-    {users:'jokutyr', data:'2453', deviceId:'57666@8584', imeiNo:86554464453424,id:6},
-    {users:'gtrewse', data:'5674', deviceId:'85656@8566', imeiNo:87675634235775,id:7},
-    {users:'mosaid', data:'7454', deviceId:'34576@8586', imeiNo:76765567567565,id:8},
-    {users:'jonas', data:'1234', deviceId:'34576@8589', imeiNo:84536974389743,id:9},
-    {users:'jokutyr', data:'2453', deviceId:'57666@8584', imeiNo:86554464453424,id:10},
-    {users:'gtrewse', data:'5674', deviceId:'85656@8566', imeiNo:87675634235775,id:11},
-    {users:'mosaid', data:'7454', deviceId:'34576@8586', imeiNo:76765567567565,id:12},
-    {users:'jonas', data:'1234', deviceId:'34576@8589', imeiNo:84536974389743,id:13},
-    {users:'jokutyr', data:'2453', deviceId:'57666@8584', imeiNo:86554464453424,id:14},
-    {users:'gtrewse', data:'5674', deviceId:'85656@8566', imeiNo:87675634235775,id:15},
-    {users:'mosaid', data:'7454', deviceId:'34576@8586', imeiNo:76765567567565,id:16},
-    {users:'jonas', data:'1234', deviceId:'34576@8589', imeiNo:84536974389743,id:17},
-    {users:'jokutyr', data:'2453', deviceId:'57666@8584', imeiNo:86554464453424,id:18},
-    {users:'gtrewse', data:'5674', deviceId:'85656@8566', imeiNo:87675634235775,id:19},
-    {users:'mosaid', data:'7454', deviceId:'34576@8586', imeiNo:76765567567565,id:20},
+let usersData = [
+    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 'https://news.google.com', id: 1 },
+    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 'https://www.youtube.com', id: 2 },
+    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 3 },
+    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 4 },
+    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 5 },
+    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 6 },
+    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 7 },
+    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 8 },
+    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 9 },
+    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 10 },
+    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 11 },
+    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 12 },
+    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 13 },
+    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 14 },
+    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 15 },
+    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 16 },
+    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 17 },
+    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 18 },
+    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 19 },
+    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 20 },
 ]
 
 function userlist(data) {
-    let html='';
+    let html = '';
     data.forEach(user => {
-       
-        html +=` <tr>
+
+        html += ` <tr>
         <td><input type="checkbox">${user.users}</td>
         <td>${user.data}</td>
         <td>${user.deviceId}</td>
@@ -35,49 +35,53 @@ function userlist(data) {
     </tr>`
     });
     tableData.insertAdjacentHTML("beforeend", html)
-  }
-  userlist(usersData)
-$(document).ready(function(){
-$("#item-btn").click(function(){
-    console.log("click")
-})
-$("#tableDatabtn").click(function()
-{
-    $(this).html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
-    .css("background-color","red")
-    $("#detail-page").css("display","flex")
-    $("#detail-page").fadeIn(1000);
-})
-$("#blurdata").click(function(){
-    $("#detail-page").fadeOut(500);
-    $("#tableDatabtn").html('click').css("background-color","")
-})
-$("#close").click(function(){
-    $("#detail-page").fadeOut(500);
-    $("#tableDatabtn").html('click').css("background-color","")
-})
-$("#nav-item-1").click(function(){
-    $(this).addClass("nav-item-click")
-    $("#nav-item-2").removeClass("nav-item-click")
-    $("#nav-item-3").removeClass("nav-item-click")
-    $(".detail-section-item").css("display","block")
-    $(".new-entry").css("display","none")
-    $("#progress").css("display","none")
-})
-$("#nav-item-2").click(function(){
-    $(this).addClass("nav-item-click")
-    $("#nav-item-1").removeClass("nav-item-click")
-    $("#nav-item-3").removeClass("nav-item-click")
-    $(".detail-section-item").css("display","none")
-    $(".new-entry").css("display","block")
-    $("#progress").css("display","none")
-})
-$("#nav-item-3").click(function(){
-    $(this).addClass("nav-item-click")
-    $("#nav-item-1").removeClass("nav-item-click")
-    $("#nav-item-2").removeClass("nav-item-click")
-    $(".detail-section-item").css("display","none")
-    $(".new-entry").css("display","none")
-    $("#progress").css("display","block")
-})
+}
+userlist(usersData)
+$(document).ready(function () {
+    $(document).on('click', function (e) {
+        var element = e.target
+        var elemId = $(element).attr("id")
+        console.log(elemId)
+        switch (elemId) {
+            case "tableDatabtn": {
+                $('#tableDatabtn').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
+                    .css("background-color", "red")
+                $("#detail-page").css("display", "flex")
+                $("#detail-page").fadeIn(1000);
+            }
+                break;
+            case "blurdata":
+            case "close":
+                $("#detail-page").fadeOut(500);
+                $("#tableDatabtn").html('click').css("background-color", "")
+                break;
+            case "nav-item-1": {
+                pageAccess(1)
+            }
+                break;
+            case "nav-item-2": {
+                pageAccess(2)
+            }
+                break;
+            case "nav-item-3": {
+                pageAccess(3)
+            }
+                break;
+            default: 
+                break;
+        }
+    })
+    function pageAccess(page) {
+
+        $("#nav-item-1").removeClass("nav-item-click")
+        $("#nav-item-2").removeClass("nav-item-click")
+        $("#nav-item-3").removeClass("nav-item-click")
+        $(`#nav-item-${page}`).addClass("nav-item-click")
+
+        $(".page1").css("display", "none")
+        $(".page2").css("display", "none")
+        $(".page3").css("display", "none")
+        $(`.page${page}`).css("display", "block")
+
+    }
 })
