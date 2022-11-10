@@ -85,7 +85,7 @@ a {
 }
 
 .back-image {
-    background-image: url(focus.png);
+    background-image: url(images/focus.png);
     background-size: cover;
     width: 60%;
     background-repeat: no-repeat;
