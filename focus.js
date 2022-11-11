@@ -37,21 +37,20 @@ function userlist(data) {
     tableData.insertAdjacentHTML("beforeend", html)
 }
 userlist(usersData)
+let btnarrow =`<span class='material-symbols-outlined arrow'>keyboard_arrow_right</span>`
 $(document).ready(function () {
     $(document).on('click', function (e) {
         var element = e.target
         var elemId = $(element).attr("id")
         switch (elemId) {
             case "tableDatabtn0": {
-                $('#tableDatabtn0').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
-                    .css("background-color", "red")
+                $('#tableDatabtn0').html(btnarrow)
                 $("#detail-page").css("display", "flex")
                 $("#detail-page").fadeIn(1000);
             }
                 break;
             case "tableDatabtn1": {
-                $('#tableDatabtn1').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
-                    .css("background-color", "red")
+                $('#tableDatabtn1').html(btnarrow)
                 $("#detail-page").css("display", "flex")
                 $("#detail-page").fadeIn(1000);
             }

@@ -11,7 +11,7 @@ let  knowmorehtml= `
     original and helpful solution so that their business can be elevated 
     to the highest possible standard.
 </p>
-<button type="button" class="backbtn knowmorebtn" >explore</button>
+<button id="knowmorebtn" type="button" class="backbtn knowmorebtn" >explore</button>
 </div>
 `
 contentMore.innerHTML=knowmorehtml
