@@ -1,0 +1,17 @@
+.content-more {
+    padding: 25px;
+    text-align: center;
+}
+.content.more h3 {
+    text-decoration: underline;
+    margin: 10px 0;
+}
+.content-more p {
+    text-align: start;
+    line-height: 25px;
+}
+.knowmorebtn {
+    margin-top: 30px;
+    position: static;
+    
+}

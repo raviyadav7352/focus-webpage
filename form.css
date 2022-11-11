@@ -1,0 +1,86 @@
+
+.wrapper-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(102, 102, 102, 0.321);
+    
+}
+.form{
+    position: absolute;
+    display: none;
+    z-index: 4;
+}
+.box-form{
+    margin-top: -5px;
+    width: 500px;
+    padding: 40px;
+    box-shadow: 0px 0px 4px grey;
+    border-radius: 0 0 10px 10px;
+    background-color: whitesmoke;
+    position:relative;
+}
+.closeform{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.regn{
+    margin-bottom: 30px;
+}
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.form-input {
+    border: 1px solid #e6e6e6;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-input:focus {
+    border-color: #2b97c3;
+}
+
+.form-item-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-btn {
+    border: 1px solid #e6e6e6;
+    height: 40px;
+    padding: 0 30px;
+    min-width: 150px;
+    background-color: #2b97c3;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.form-item.success input {
+    border-color: #4593e1;
+}
+
+.form-item.error input {
+    border-color: #ff3860;
+}
+.form-item .error{
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+}

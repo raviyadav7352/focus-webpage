@@ -42,8 +42,15 @@ $(document).ready(function () {
         var element = e.target
         var elemId = $(element).attr("id")
         switch (elemId) {
-            case "tableDatabtn": {
-                $('#tableDatabtn').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
+            case "tableDatabtn0": {
+                $('#tableDatabtn0').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
+                    .css("background-color", "red")
+                $("#detail-page").css("display", "flex")
+                $("#detail-page").fadeIn(1000);
+            }
+                break;
+            case "tableDatabtn1": {
+                $('#tableDatabtn1').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
                     .css("background-color", "red")
                 $("#detail-page").css("display", "flex")
                 $("#detail-page").fadeIn(1000);
@@ -52,7 +59,7 @@ $(document).ready(function () {
             case "blurdata":
             case "close":
                 $("#detail-page").fadeOut(500);
-                $("#tableDatabtn").html('click').css("background-color", "")
+                $("#tableDatabtn0, #tableDatabtn1").html('click').css("background-color", "")
                 break;
             case "nav-item-1": {
                 pageAccess(1)
@@ -66,7 +73,28 @@ $(document).ready(function () {
                 pageAccess(3)
             }
                 break;
-            default: 
+            case "apply": 
+            case "login": {
+                $("#backdrop").fadeIn(200)
+                $("#form").fadeIn(200)
+
+            }
+                break;
+            case "skipFromHere":
+                $("#mainPage").fadeOut(500)
+                $("#secondPage").fadeIn(500)
+                break;
+            case "goback":
+                $("#mainPage").fadeIn(500)
+                $("#secondPage").fadeOut()
+                break;
+            case "knowMore":
+                $("#knowmore").fadeIn(100)
+                break;
+            case "closeknowmore":
+                $("#knowmore").fadeOut()
+                break;
+            default:
                 break;
         }
     })
