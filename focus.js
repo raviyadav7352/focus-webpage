@@ -41,7 +41,6 @@ $(document).ready(function () {
     $(document).on('click', function (e) {
         var element = e.target
         var elemId = $(element).attr("id")
-        console.log(elemId)
         switch (elemId) {
             case "tableDatabtn": {
                 $('#tableDatabtn').html("<span class='material-symbols-outlined'>keyboard_arrow_right</span>")
