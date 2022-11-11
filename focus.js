@@ -83,6 +83,11 @@ $(document).ready(function () {
             case "skipFromHere":
                 $("#mainPage").fadeOut(500)
                 $("#secondPage").fadeIn(500)
+                $("#knowmore").fadeOut()
+                $("#form").fadeOut(1000)
+                $("#detail-page").fadeOut(500);
+                $("#tableDatabtn0, #tableDatabtn1").html('click').css("background-color", "")
+
                 break;
             case "goback":
                 $("#mainPage").fadeIn(500)
