@@ -7,6 +7,9 @@ $(document).ready(function () {
             case "closeform":
                 $("#backdrop").fadeOut(500);
                 break;
+            case "knowmorebtn":
+                $("#knowmore").toggleClass("darkmode")
+                break;
             default:
                 break;
 
@@ -25,20 +28,20 @@ let html = ` <div class="wrapper-form" id="backdrop">
 close
 </i>
     <form id="form" action="#">
-        <h1 class="regn">Registration Form</h1>
+        <h2 class="form-head">Login details</h2>
         <div class="form-item">
             <label for="firstname" class="form-label">First name</label>
-            <input class="form-input" id="firstname" type="text" placeholder="Enter firstname" value=""> 
+            <input class="form-input" id="firstname" type="text" placeholder="Max" value=""> 
             <div class="error"></div>
         </div>
         <div class="form-item">
             <label for="lastname" class="form-label">Last name</label>
-            <input class="form-input" id="lastname" type="text" placeholder="Enter LastName" value="">
+            <input class="form-input" id="lastname" type="text" placeholder="Laren" value="">
             <div class="error"></div>
         </div>
         <div class="form-item">
             <label for="email" class="form-label">Email</label>
-            <input class="form-input" id="email" type="text" placeholder="Enter Email" value="">
+            <input class="form-input" id="email" type="text" placeholder="abc@gmail.com" value="">
             <div class="error"></div>
         </div>
         <div class="form-item form-item-btn">

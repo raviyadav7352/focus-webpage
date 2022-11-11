@@ -13,31 +13,31 @@
     display: none;
     z-index: 4;
 }
-.box-form{
-    margin-top: -5px;
-    width: 500px;
-    padding: 40px;
+.box-form {
+    width: 400px;
+    padding: 18px 36px 12px;
     box-shadow: 0px 0px 4px grey;
-    border-radius: 0 0 10px 10px;
-    background-color: whitesmoke;
-    position:relative;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
 }
 .closeform{
     position: absolute;
     right: 4px;
     top: 4px;
 }
-.regn{
+.form-head {
     margin-bottom: 30px;
+    opacity: .8;
+    text-align: center;
 }
 .form-item {
     margin-bottom: 20px;
 }
 
 .form-label {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.891);
+    margin-bottom: 4px;
     text-transform: capitalize;
     display: inline-block;
 }
@@ -49,10 +49,12 @@
     font-size: 14px;
     width: 100%;
     border-radius: 4px;
+    outline-color: aqua;
 }
 
 .form-input:focus {
     border-color: #2b97c3;
+    background-color: whitesmoke;
 }
 
 .form-item-btn {
