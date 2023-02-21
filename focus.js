@@ -1,26 +1,15 @@
 const tableData = document.getElementById("usertable");
 
 let usersData = [
-    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 'https://news.google.com', id: 1 },
-    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 'https://www.youtube.com', id: 2 },
-    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 3 },
-    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 4 },
-    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 5 },
-    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 6 },
-    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 7 },
-    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 8 },
-    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 9 },
-    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 10 },
-    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 11 },
-    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 12 },
-    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 13 },
-    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 14 },
-    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 15 },
-    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 16 },
-    { users: 'jonas', data: '1234', deviceId: '34576@8589', imeiNo: 84536974389743, id: 17 },
-    { users: 'jokutyr', data: '2453', deviceId: '57666@8584', imeiNo: 86554464453424, id: 18 },
-    { users: 'gtrewse', data: '5674', deviceId: '85656@8566', imeiNo: 87675634235775, id: 19 },
-    { users: 'mosaid', data: '7454', deviceId: '34576@8586', imeiNo: 76765567567565, id: 20 },
+    { users: 'Rahul', data: 'super', deviceId: 'React-rainbow', imeiNo: 'https://react-rainbow.io/#/Components', id: 1 },
+    { users: 'Ankit', data: 'cool', deviceId: 'Bootstrap', imeiNo: 'https://getbootstrap.com/docs/5.3/getting-started/introduction/', id: 2 },
+    { users: 'Aniket', data: 'wonder', deviceId: 'css-tricks', imeiNo: "https://css-tricks.com/", id: 3 },
+    { users: 'Saharsh', data: 'ful', deviceId: 'Web dev', imeiNo: "https://web.dev/", id: 4 },
+    { users: 'Darsh', data: 'css', deviceId: 'Dribble', imeiNo: "https://dribbble.com/", id: 5 },
+    { users: 'Pinki', data: 'use', deviceId: 'webdesign', imeiNo: "https://dribbble.com/tags/designer_portfolio", id: 6 },
+    { users: 'Kajal', data: 'web', deviceId: 'mdb-builder', imeiNo: "https://mdb-builder.com/", id: 7 },
+    { users: 'Neha', data: 'design', deviceId: 'css-tip', imeiNo: "https://markodenic.com/css-tips/", id: 8 },
+    { users: 'Nilu', data: 'purpose', deviceId: 'uiverse', imeiNo: "https://uiverse.io/all/", id: 9 },
 ]
 
 function userlist(data) {
@@ -31,7 +20,7 @@ function userlist(data) {
         <td><input type="checkbox">${user.users}</td>
         <td>${user.data}</td>
         <td>${user.deviceId}</td>
-        <td><a target="_blank" href=${user.imeiNo}>${user.imeiNo}</a></td>
+        <td><a class="link" target="_blank" href=${user.imeiNo}>${user.imeiNo}</a></td>
     </tr>`
     });
     tableData.insertAdjacentHTML("beforeend", html)
