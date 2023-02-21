@@ -346,6 +346,7 @@ header.detail {
     display: flex;
     align-items: center;
     background-color:turquoise;
+    cursor: pointer;
 }
 .display-hide{
     display: none;
