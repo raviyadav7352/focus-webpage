@@ -10,6 +10,7 @@ let usersData = [
     { users: 'Kajal', data: 'web', deviceId: 'mdb-builder', imeiNo: "https://mdb-builder.com/", id: 7 },
     { users: 'Neha', data: 'design', deviceId: 'css-tip', imeiNo: "https://markodenic.com/css-tips/", id: 8 },
     { users: 'Nilu', data: 'purpose', deviceId: 'uiverse', imeiNo: "https://uiverse.io/all/", id: 9 },
+    { users: 'unknown', data: 'loader', deviceId: 'cssloaders', imeiNo: "https://cssloaders.github.io/", id: 10 },
 ]
 
 function userlist(data) {
